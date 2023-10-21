@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Portfolio Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Crypto Portfolio Tracker</h1>
+    </header>
+
+    <main>
+        <section class="portfolio">
+            <h2>Your Portfolio</h2>
+            <ul id="portfolio-list">
+                <!-- Portfolio items will be added here dynamically -->
+            </ul>
+        </section>
+
+        <section class="add-coin">
+            <h2>Add a Coin</h2>
+            <input type="text" id="coin-symbol" placeholder="Enter Coin Symbol">
+            <input type="number" id="coin-amount" placeholder="Enter Amount">
+            <button id="add-coin-button">Add</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+h2 {
+    color: #333;
+}
+
+.portfolio {
+    margin-bottom: 20px;
+}
+
+#portfolio-list {
+    list-style: none;
+    padding: 0;
+}
+
+#portfolio-list li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-coin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="number"] {
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
